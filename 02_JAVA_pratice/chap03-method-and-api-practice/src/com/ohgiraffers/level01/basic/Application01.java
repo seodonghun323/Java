@@ -1,11 +1,11 @@
 package com.ohgiraffers.level01.basic;
 
-public class Question {
+public class Application01 {
 
     public static void main(String[] args) {
 
         /* 다음 조건을 만족하는 프로그램을 작성하시오.
-         *   구현 클래스 Calculator, Application01
+         *   구현해야 하는 클래스 Calculator, Application01
          *   구현 내용
          *   Calculator
          *   - checkMethod(): void 설명 : 함수 호출, 확인용 메소드
@@ -14,7 +14,7 @@ public class Question {
          *   - multiTwoNumber(a:int, b:int): int 설명 : 두 수를 입력 받아 곱한 값을 리턴한다.
          *   - divideTwoNumber(a:int, b:int): int 설명 : 두 수를 입력 받아 나눈 값을 리턴한다.
          *
-         *
+         *   Application01
          *   - main(args:String[]): void 설명 : 모든 메소드는 main 함수에서 호출하여 출력한다.
          *   // 메소드 호출 확인용 메소드 호출
          *   // 10, 20 두 개의 정수를 매개변수로 하여 두 수를 더하는 메소드 호출 후 리턴값 출력
@@ -34,6 +34,32 @@ public class Question {
          *   - 10과 5의 나눈 후 몫 : 2
          *  */
 
+        /* Answer 답변을 기재해주세요. */
+
+        Calculator calc = new Calculator();
+
+        /* checkMethod */
+        calc.checkMethod();
+
+        /* sumTwoNumber(ex1) */
+        int result = calc.sumTwoNumber(10, 20);
+        System.out.println("10과 20의 합 : " + result);
+
+        /* sumTwoNumber(ex2) */
+        System.out.println("10과 20의 합 : " + calc.sumTwoNumber(10, 20));
+
+        /* minusTwoNumber(ex1) */
+        int result2 = calc.minusTwoNumber(10, 5);
+        System.out.println("10과 5의 차 : " + result2);
+
+        /* minusTwoNumber(ex2) */
+        System.out.println("10과 5의 차 : " + calc.minusTwoNumber(10, 5));
+
+        /* multiTwoNumber */
+        System.out.println("10과 5의 곱 : " + calc.multiTwoNumber(10, 5));
+
+        /* divideTwoNumber */
+        System.out.println("10과 5의 나누기 몫 : " + calc.divideTwoNumber(10, 5));
 
     }
 
